@@ -42,10 +42,10 @@ namespace limits
         public int MaxNPCs;
 
         [Label("Update on World Load")]
-        [Tooltip("Allows to just re-enter your world instead of restarting the game. Experimental, may cause errors.\nfalse = default")]
+        [Tooltip("Allows to just re-enter your world instead of restarting the game. Shouldn't but MAY cause errors.\true = default")]
         [Range(0, Main.maxNPCs)]
         [Increment(1)]
-        [DefaultValue(false)]
+        [DefaultValue(true)]
         public bool UpdateOnWorldLoad;
     }
 }
